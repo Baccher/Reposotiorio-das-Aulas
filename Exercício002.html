@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo</title>
+</head>
+<body>
+    <script>
+    let n1 = prompt('Digite um número') //let é utilizado como uma forma moderna do var
+    let n2 = prompt('Digite outro número')  //prompt é um comando utilizado para criar uma caixa de diálogo no navegador
+    
+    let r = parseFloat(n1) + parseFloat(n2) 
+    /*parseFloat é utilizado para declarar um número
+    ele é utilizado para a conversões de números, em vez de juntá-los
+    muito utilizado para as 4 operações
+    */
+    document.write(`A soma de ${n1} e ${n2} é <b>${r}</b>.`) //${} declara as variáveis
+    //document.write serve para escrever um documento para o navegador +
+    //+ como se pode ver na linha """document.write(`A soma de ${n1} e ${n2} é <b>${r}</b>.`)"""    
+    </script>
+</body>
+</html>

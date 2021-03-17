@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa002</title>
+</head>
+<body>
+
+    <h1>Exercício</h1>
+    <p>Calcula o valor ocm desconto a partir do preço e do percentual de desconto</p>
+
+    <form id="form">
+
+        <input id="field1" type="number" placeholder="Preço base do produto">
+        <input id="field2" type="number" placeholder="Percentual de desconto">
+        <input id="field2" type="text" placeholder="Nome do produto">
+    <button>Calcular</button>
+    </form>
+
+    <div id="resultado"></div>
+
+    <script>
+        function exemplo(event) {
+            event.preventDefault()
+
+            let preço = parseFloat(campo1.value)
+            let desconto = parseFloat(campo2.value)
+
+            let preçoDescontado = preço * desconto / 100
+            let finalproduto = preço - preçoDescontado
+
+            resultado.textContent = `
+            Produto final é ${finalproduto}
+            `
+        }
+
+        formulario.addEventListener('submit', exemplo)
+    </script>
+</body>
+</html>
